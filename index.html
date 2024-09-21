@@ -15,7 +15,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
                     <!-- Creacion del flex necesario para los botones -->
-                    <form class="d-flex" role="search">
+                    <div class="d-flex">
                         <button class="btn btn-success me-3" type="submit">Create a new post</button>
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle me-3" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></button>
@@ -24,12 +24,74 @@
                                 <li><button class="dropdown-item" type="button">Accesibility</button></li>
                                 <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><button class="dropdown-item" type="button">Log out</button></li>
+                                <li><button class="dropdown-item text-danger" type="button">Log Out</button></li>
                             </ul>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </nav>
+
+
+
+            <!-- Carrusel para las opciones de vista -->
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="d-flex justify-content-center">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><i class="fa-solid fa-table-cells"></i></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"><i class="fa-solid fa-square"></i></button>
+                </div>
+                <div class="carousel-inner">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                <!-- Carrusel de imagenes de 3 x 3 -->
+                    <div class="carousel-item active">
+                        <!-- Fila de imagenes 1 -->
+                        <div class="row p-1">
+                            <div class="col p-1">
+                                <img  class="img-fluid h-100 border" src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"   alt="Lorem Ipsum">
+                            </div>
+                            <div class="col p-1">
+                                <img class="img-fluid h-100 border" src="https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g" alt="Lorem Ipsum">
+                            </div>
+                            <div class="col p-1">
+                                <img class="img-fluid h-100 border" src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="Lorem Ipsum">
+                            </div>
+                        </div>
+                        <!-- Fila de imagenes 2 -->
+                        <div class="row">
+                            <div class="col p-1">
+                                <img  class="img-fluid h-100 border" src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"   alt="Lorem Ipsum">
+                            </div>
+                            <div class="col p-1">
+                                <img class="img-fluid h-100 border" src="https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g" alt="Lorem Ipsum">
+                            </div>
+                            <div class="col p-1">
+                                <img class="img-fluid h-100 border" src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="Lorem Ipsum">
+                            </div>
+                        </div>
+                        <!-- Fila de imagenes 3 -->
+                        <div class="row p-1">
+                            <div class="col p-1">
+                                <img  class="img-fluid h-100 border" src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"   alt="Lorem Ipsum">
+                            </div>
+                            <div class="col p-1">
+                                <img class="img-fluid h-100 border" src="https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g" alt="Lorem Ipsum">
+                            </div>
+                            <div class="col p-1">
+                                <img class="img-fluid h-100 border" src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="Lorem Ipsum">
+                            </div>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                </div>
+            </div>
         </div>
     </body>
 
