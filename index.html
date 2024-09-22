@@ -16,7 +16,7 @@
                     <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> <strong>Instagram</strong></a>
                     <!-- Creacion del flex necesario para los botones -->
                     <div class="d-flex">
-                        <button class="btn btn-success me-3" type="submit">Create a new post</button>
+                        <button class="btn btn-success me-3" type="button" data-bs-toggle="modal" data-bs-target="#NewPost">Create a new post</button>
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle me-3" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></button>
                             <ul class="dropdown-menu dropdown-menu-end">
@@ -30,17 +30,37 @@
                     </div>
                 </div>
             </nav>
-
-
+            
+            <!-- Creacion de un post -->
+            <div class="modal fade" id="NewPost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new Post</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label class="fw-bold mb-1">Caption</label>
+                        <textarea class="form-control text-secondary" id="exampleFormControlTextarea1" rows="2">Add the caption of your post here</textarea>
+                        <button class="mt-2 btn btn-light border border-secondary me-1" type="button" data-bs-toggle="placeholder" aria-expanded="false"><i class="fa-solid fa-camera"></i></button>
+                        <button class="mt-2 btn btn-light border border-secondary me-1" type="button" data-bs-toggle="placeholder" aria-expanded="false"><i class="fa-solid fa-location-dot"></i></button>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             <!-- Carrusel para las opciones de vista -->
-            <div id="carouselExampleIndicators" class="carousel slide mt-3">
+            <div id="carouselExampleFade" class="carousel slide mt-3 carousel-fade">
                 <div class="d-flex justify-content-center">
-                  <button type="button" class="border-0 bg-white" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><i class="fa-solid fa-table-cells"></i></button>
-                  <button type="button" class="border-0 bg-white" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"><i class="fa-solid fa-square"></i></button>
+                  <button type="button" class="border-0 bg-white" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><i class="fa-solid fa-table-cells"></i></button>
+                  <button type="button" class="border-0 bg-white" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"><i class="fa-solid fa-square"></i></button>
                 </div>
                 <!-- Carrusel de imagenes de 3 x 3 -->
-                    <div class="carousel-item">
+                    <div class="carousel-item active">
                         <!-- Fila de imagenes 1 -->
                         <div class="row p-1">
                             <div class="col p-1">
@@ -56,42 +76,42 @@
                         <!-- Fila de imagenes 2 -->
                         <div class="row p-1">
                             <div class="col p-1">
-                                <img  class="img-fluid h-100" src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"   alt="Lorem Ipsum">
+                                <img  class="img-fluid h-100" src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4"   alt="Lorem Ipsum">
                             </div>
                             <div class="col p-1">
-                                <img class="img-fluid h-100" src="https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g" alt="Lorem Ipsum">
+                                <img class="img-fluid h-100" src="https://fastly.picsum.photos/id/32/4032/3024.jpg?hmac=n7I3OdGszMIwuGcvplNthgBmAxvAZ3rNBBSuDFZaItQ" alt="Lorem Ipsum">
                             </div>
                             <div class="col p-1">
-                                <img class="img-fluid h-100" src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="Lorem Ipsum">
+                                <img class="img-fluid h-100" src="https://fastly.picsum.photos/id/34/3872/2592.jpg?hmac=4o5QGDd7eVRX8_ISsc5ZzGrHsFYDoanmcsz7kyu8A9A" alt="Lorem Ipsum">
                             </div>
                         </div>
                         <!-- Fila de imagenes 3 -->
                         <div class="row p-1">
                             <div class="col p-1">
-                                <img  class="img-fluid h-100 " src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"   alt="Lorem Ipsum">
+                                <img  class="img-fluid h-100 " src="https://fastly.picsum.photos/id/25/5000/3333.jpg?hmac=yCz9LeSs-i72Ru0YvvpsoECnCTxZjzGde805gWrAHkM"   alt="Lorem Ipsum">
                             </div>
                             <div class="col p-1">
-                                <img class="img-fluid h-100" src="https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g" alt="Lorem Ipsum">
+                                <img class="img-fluid h-100" src="https://fastly.picsum.photos/id/27/3264/1836.jpg?hmac=p3BVIgKKQpHhfGRRCbsi2MCAzw8mWBCayBsKxxtWO8g" alt="Lorem Ipsum">
                             </div>
                             <div class="col p-1">
-                                <img class="img-fluid h-100 " src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="Lorem Ipsum">
+                                <img class="img-fluid h-100 " src="https://fastly.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU" alt="Lorem Ipsum">
                             </div>
                         </div>
                     </div>
 
                     <!-- Carrusel de posts -->
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         <div class="row">
                             <div class="container">
                                 <div class="row justify-content-center">
-                                    <div class="col-6 border border-light p-0">
+                                    <div class="col-6 border border-secondary p-0">
                                         <div class="d-flex">
-                                            <h2 class="mt-3 ms-2 flex-grow-1">This is how it should be done!</h2>
+                                            <h2 class="mt-2 ms-2 flex-grow-1">This is how it should be done!</h2>
                                             <p class="mt-3 me-3">06/28</p>
                                         </div>
                                         
                                         <div class="row">
-                                            <img class="img-fluid h-100" src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="Lorem Ipsum">
+                                            <img class="img-fluid h-100" src="https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g" alt="Lorem Ipsum">
                                         </div>
 
                                         <p class="mt-3 ms-2 me-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam possimus aperiam excepturi consequuntur minima saepe, nulla voluptates reiciendis veritatis odio aspernatur dolorem quasi dicta ullam illum repellendus assumenda labore.</p>
@@ -103,9 +123,9 @@
                         <div class="row pt-5">
                             <div class="container">
                                 <div class="row justify-content-center">
-                                    <div class="col-6 border border-light p-0">
+                                    <div class="col-6 border border-secondary p-0">
                                         <div class="d-flex">
-                                            <h2 class="mt-3 ms-2 flex-grow-1">This is how it should be done!</h2>
+                                            <h2 class="mt-2 ms-2 flex-grow-1">This is how it should be done!</h2>
                                             <p class="mt-3 me-3">08/23</p>
                                         </div>
                                         
@@ -121,14 +141,14 @@
                         <div class="row pt-5">
                             <div class="container">
                                 <div class="row justify-content-center">
-                                    <div class="col-6 border border-light p-0">
+                                    <div class="col-6 border border-secondary p-0">
                                         <div class="d-flex">
-                                            <h2 class="mt-3 ms-2 flex-grow-1">Lorem Ipsum</h2>
+                                            <h2 class="mt-2 ms-2 flex-grow-1">Lorem Ipsum</h2>
                                             <p class="mt-3 me-3">11/15</p>
                                         </div>
                                         
                                         <div class="row">
-                                            <img class="img-fluid h-100" src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="Lorem Ipsum">
+                                            <img class="img-fluid h-100" src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI" alt="Lorem Ipsum">
                                         </div>
 
                                         <p class="mt-3 ms-2 me-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam possimus aperiam excepturi consequuntur minima saepe, nulla voluptates reiciendis veritatis odio aspernatur dolorem quasi dicta ullam illum repellendus assumenda labore.</p>
@@ -140,14 +160,14 @@
                         <div class="row pt-5">
                             <div class="container">
                                 <div class="row justify-content-center">
-                                    <div class="col-6 border border-light p-0">
+                                    <div class="col-6 border border-secondary p-0">
                                         <div class="d-flex">
-                                            <h2 class="mt-3 ms-2 flex-grow-1">Wowzers</h2>
+                                            <h2 class="mt-2 ms-2 flex-grow-1">Wowzers</h2>
                                             <p class="mt-3 me-3">13/16</p>
                                         </div>
                                         
                                         <div class="row">
-                                            <img class="img-fluid h-100" src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="Lorem Ipsum">
+                                            <img class="img-fluid h-100" src="https://picsum.photos/id/1084/536/354?grayscale" alt="Lorem Ipsum">
                                         </div>
 
                                         <p class="mt-3 ms-2 me-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam possimus aperiam excepturi consequuntur minima saepe, nulla voluptates reiciendis veritatis odio aspernatur dolorem quasi dicta ullam illum repellendus assumenda labore.</p>
